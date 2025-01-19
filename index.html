@@ -66,7 +66,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3 no-print">
               <span
                 class="profile-img"
-                style="background-image: url(/images/profile.jpeg)"
+                style="background-image: url(/images/profile.jpeg); border-radius: 10px;"
               ></span>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
@@ -77,16 +77,16 @@
                   <p>안녕하세요! 3년 차 금융 개발자 이재용입니다.</p>
                 </li>
                 <li>
-                  <p>test</p>
+                  <p>대학생때 개발을 처음 접하고 매력에 빠져 현재 개발자로서 생활하고 있습니다.</p>
                 </li>
                 <li>
-                  <p>특징 2</p>
+                  <p>데이터에 대한 <mark>검증</mark>과 쿼리 기반 데이터 도출을 중요시하고 있습니다.</p>
                 </li>
                 <li>
-                  <p>특징 3</p>
+                  <p>협업과 존중을 기반으로 성장의 초점에 두어 <mark>지속 가능한</mark> 성과를 이루어내고자 합니다.</p>
                 </li>
                 <li>
-                  <p>특징 4</p>
+                  <p>제자리에 머물지 않고 항상 도전하는 의식을 가지고 개발에 임하고 있습니다.</p>
                 </li>
               </ul>
             </div>
@@ -104,7 +104,13 @@
               <p><b>금융 개발자</b></p>
               <p>2021.07 ~ 현재</p>
             </div>
-            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12"></div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+              <p>
+              솔루션 중심의 SI사업을 전개한다는 기본전략에 따라 미래 IT사업과 SI, 컨설팅,
+              IT아웃소싱 등의 다양한 비즈니스 경험과 기술력을 갖추어 금융, 공공 등의 전 산업분야에 걸쳐 사업을
+              다각화 하는데 집중하고 있습니다.
+              </p>
+            </div>
           </div>
         </div>
         <div class="container projects-container">
@@ -112,25 +118,72 @@
 
           <div class="row clearfix layout layout-top-middle">
             <div class="col-xs-12 col-print-12 details">
-              <h4>프로젝트 1</h4>
+              <h4>사내 메타시스템 구축</h4>
             </div>
             <div class="col-xs-12 col-print-12">
               <p class="quote">
-                2023.12 ~ 현재
-                <br />
-                프로젝트 간단한 소개
+                2023.10.01 ~ 2024.1.31 (4개월)
+                <br/>
+                2024.11.01 ~ 2023.12.15 (1개월)
+                <br/>
+                VueJs 기반 메타시스템 자체 구축
               </p>
               <ul>
                 <li>
-                  한 일 1
+                  기존 사내 프레임워크에 Vue.js를 적용하여 사내 메타시스템을 구축하였으며, 단어, 도메인, 용어 관리에 대한 테이블 설계 및 개발을 진행
                   <ul>
-                    <li>부연설명</li>
+                    <li>기존 프레임워크에 Vue.js를 적용하여 사용자 경험(UX)을 개선하고, 보다 유연한 화면 구성과 유지보수가 용이한 구조를 구현</li>
+                    <li>메타데이터 관리에 필요한 단어, 도메인, 용어 관리를 위한 데이터베이스 테이블 구조를 설계하고, 이를 기반으로 CRUD 기능을 구현</li>
+                    <li>화면에 사용되는 그리드 기능을 추가기능 개발(data Grouping, dataContextMenu), 사용자 요구 사항에 따라 컴포넌트의 기능을 추가 및 수정하여 재사용성 용이</li>
                   </ul>
                 </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row clearfix layout layout-top-middle">
+            <div class="col-xs-12 col-print-12 details">
+              <h4>KB저축은행 신용정보 유지보수</h4>
+            </div>
+            <div class="col-xs-12 col-print-12">
+              <p class="quote">
+                2024.05.01 ~ 2024.10.31 (6개월)
+                <br />
+                KCIS, NICE, KCB 신용정보관리규약에 맞는 데이터 관리
+              </p>
+              <ul>
                 <li>
-                  한 일 2
+                  KCIS, NICE, KCB 신용정보관리규약에 맞춘 데이터 관리 및 전송 업무를 담당하며, 대출에 따른 신규, 연체, 상각/부분상각, 해지 데이터를 쿼리 기반으로 추출 및 집계하여 저축중앙회 시스템으로 전송하였습니다.
                   <ul>
-                    <li>부연설명</li>
+                    <li>KCIS, NICE, KCB의 규약에 따라 데이터의 적합성을 <mark>검증</mark>하고, 규정에 맞는 데이터 형식과 기준을 충족</li>
+                    <li>대출의 상태 변화(신규, 연체, 상각/부분상각, 해지)에 따른 데이터를 체계적으로 분류 및 관리</li>
+                    <li>SQL 쿼리를 활용하여 필요한 데이터를 효율적으로 추출하고, 집계 결과를 분석하여 전달 가능한 형태로 가공</li>
+                    <li>저축중앙회 시스템의 요구사항에 맞춘 데이터 전송 프로세스를 설계 및 수행하여, 정확한 데이터 전달 및 오류율<mark>30% 감소</mark></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row clearfix layout layout-top-middle">
+            <div class="col-xs-12 col-print-12 details">
+              <h4>신한금융지주 연결결산구축</h4>
+            </div>
+            <div class="col-xs-12 col-print-12">
+              <p class="quote">
+                2022.06.13 ~ 2023.08.04 (15개월)
+                <br />
+                Java Spring 기반 연결결산 시스템 재구축
+              </p>
+              <ul>
+                <li>
+                  연결결산 시스템의 연결공시보고서 프로세스 재설계 및 구축
+                  <ul>
+                    <li>기존 CLOB 기반의 보고서 데이터 구조를 분석하고, 이를 보다 효율적인 보고서 좌표 데이터 형식으로 전환하여 데이터 처리 및 저장 효율성을 향상</li>
+                    <li>OCP를 준수하는 설계를 통해 <mark class="bluemark">유연성과 확장성</mark>을 확보한 Java 프로세스를 구축</li>
+                    <li>보고서 생성 프로세스를 모듈화하여 코드의 재사용성 및 유지보수성을 크게 향상</li>
+                    <li>전환된 데이터 형식과 재설계된 프로세스를 통해 보고서 생성 시간의 <mark class="bluemark">60% 감소</mark></li>
+                    <li>보고서 구조 변경이나 추가 요구사항 발생 시 신속히 대응할 수 있도록 <mark class="bluemark">확장 가능한</mark> 프로세스 설계를 구현</li>
                   </ul>
                 </li>
               </ul>
@@ -142,29 +195,16 @@
 
           <div class="row clearfix layout layout-left">
             <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-              <h4>Backend</h4>
+              <h4>Development</h4>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
               <ul>
-                <li>Kotlin, Java</li>
-                <li>Spring Boot, Spring Batch, Spring Security</li>
-                <li>Spring Data R2DBC / MongoDB / JPA / Redis</li>
-                <li>Spring Kafka</li>
-                <li>gRPC, GraphQL</li>
-                <li>Junit5, Mockito, Kotest</li>
-                <li>Gradle</li>
-                <li>IntelliJ</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row clearfix layout layout-left">
-            <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-              <h4>DevOps</h4>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
-              <ul>
-                <li>Kubernetes</li>
+                <li>Java</li>
+                <li>Spring Boot, Spring Batch</li>
+                <li>JavaScript, VueJs</li>
+                <li>WebSquare, nexcore</li>
+                <li>MariaDB, Oracle, Tibero</li>
+                <li>Eclipse, VsCode</li>
               </ul>
             </div>
           </div>
@@ -174,21 +214,12 @@
 
           <div class="row clearfix layout layout-left">
             <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-              <h4>경기과학기술대학교</h4>
-              <p>2019.02 ~ 2023.02</p>
+              <h4>전산회계 1급</h4>
+              <p>2024.08</p>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
               <ul>
-                <li>컴퓨터공학과</li>
-                <li>
-                  과학기술정보통신부 국가이공계장학생 선발
-                  <ul>
-                    <li>2년 전액 장학금</li>
-                  </ul>
-                </li>
-                <li>수석 장학생 (학점 4.3 / 4.5)</li>
-                <li>캡스톤 은상 수상</li>
-                <li>SW 알고리즘 경시대회 3등</li>
+                <li>한국세무사회</li>
               </ul>
             </div>
           </div>
@@ -196,11 +227,61 @@
           <div class="row clearfix layout layout-left">
             <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
               <h4>정보처리기사</h4>
-              <p>2022.06</p>
+              <p>2023.06</p>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
               <ul>
                 <li>한국산업인력공단</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row clearfix layout layout-left">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+              <h4>정보처리산업기사</h4>
+              <p>2021.08</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+              <ul>
+                <li>한국산업인력공단</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row clearfix layout layout-left">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+              <h4>학점은행제</h4>
+              <p>2022.03 ~ 2022.08</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+              <ul>
+                <li>학사취득</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row clearfix layout layout-left">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+              <h4>네트워크관리사 2급</h4>
+              <p>2020.12</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+              <ul>
+                <li>한국정보통신자격협회</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row clearfix layout layout-left">
+            <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+              <h4>경기과학기술대학교</h4>
+              <p>2019.02 ~ 2022.02</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+              <ul>
+                <li>컴퓨터모바일융합과</li>
+                <li>차석 장학생 (학점 4.25 / 4.5)</li>
+                <li>캡스톤 장려상 수상</li>
               </ul>
             </div>
           </div>
